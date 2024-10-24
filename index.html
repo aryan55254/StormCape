@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STORMCAPE</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <div>
-        <input id="cityinput" type="text" placeholder="Enter City Name">
-        <button id="button01">Search</button>
+
+<body class="bg-green-300"> 
+    <div class="bg-white w-auto h-24">
+        <h1>STORM CAPE</h1>
     </div>
-    <div>
-        <h3 id="cityname" ></h3>
-        <h6 id="citytime"></h6>
-        <p id="temp"></p>
+    <div class="mt-40 justify-items-center">
+        <div>
+            <input class=" h-7 w-44 text-xl   rounded-md " id="cityinput" type="text" placeholder="Enter City Name">
+            <button class=" rounded-md text-white border-2 w-24  h-7 font-bold"  id="button01">
+                Search
+            </button>
+        </div>
+        <div class="mt-32">
+            <h3 id="cityname"></h3>
+            <h6 id="citytime"></h6>
+            <p id="temp"></p>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
