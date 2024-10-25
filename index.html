@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STORMCAPE</title>
     <link rel="stylesheet" href="./output.css">
+    <style> body {
+        background-image: url('./4d97cfcf10e73698aebe41869087d8a7.jpg'); /* Replace with your image path */
+        background-size: cover; /* Makes the image cover the entire viewport */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        height: 100vh; /* Ensures the body takes the full viewport height */
+        margin: 0; /* Removes default body margin */
+        display: flex; /* Centers the content flexibly */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        color: white; /* Changes text color for better contrast */
+    }</style>
 </head>
 
-<body class="bg-green-300"> 
-    <div class="bg-white w-auto h-24">
-        <h1>STORM CAPE</h1>
-    </div>
-    <div class="mt-40 justify-items-center">
+<body> 
+    <div class="mt-40 justify-items-center mb-6">
         <div>
-            <input class=" h-7 w-44 text-xl   rounded-md " id="cityinput" type="text" placeholder="Enter City Name">
-            <button class=" rounded-md text-white border-2 w-24  h-7 font-bold"  id="button01">
+            <h3 class="text-lg font-semibold text-gray-800 shadow-md p-2" id="cityname"></h3>
+            <h6 class="text-lg font-semibold text-gray-800 shadow-md p-2" id="citytime"></h6>
+            <p class="text-lg font-semibold text-gray-800 shadow-md p-2" id="temp"></p>
+        </div>
+        <div>
+            <input class="bg-gray-700 border border-gray-500 font-sans text-gray-100 placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 w-72 py-2 px-4" id="cityinput" type="text" placeholder="Enter City Name">
+            <button class="w-36 font-sans py-2 px-4 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-indigo-500" id="button01">
                 Search
             </button>
         </div>
-        <div class="mt-32">
-            <h3 id="cityname"></h3>
-            <h6 id="citytime"></h6>
-            <p id="temp"></p>
-        </div>
+        
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
